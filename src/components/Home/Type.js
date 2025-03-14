@@ -7,7 +7,6 @@ function Type() {
       options={{
         strings: [
           "BIM DEVELOPER",
-          
           "HARINI KU ANNA",
       
         ],
