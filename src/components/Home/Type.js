@@ -8,13 +8,6 @@ function Type() {
         strings: [
           "BIM DEVELOPER",
           "HARINI KU ANNA",
-      
-
-
-
-
-
-      
         ],
         autoStart: true,
         loop: true,
