@@ -8,6 +8,11 @@ function Type() {
         strings: [
           "BIM DEVELOPER",
           "CIVIL ENGINEER",
+
+
+
+
+          
         ],
         autoStart: true,
         loop: true,
