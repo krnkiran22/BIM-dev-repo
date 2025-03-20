@@ -2,12 +2,32 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import VGP4 from "../../Assets/Projects/VGP4.png";
+import VGP6 from "../../Assets/Projects/VGP6.png";
+import VGP2 from "../../Assets/Projects/VGP2.png";
+import rajesh2 from "../../Assets/Projects/rajesh2.png";
+import rajesh4 from "../../Assets/Projects/rajesh4.png";
+import rajesh5 from "../../Assets/Projects/rajesh5.png";
+import OASIS2 from "../../Assets/Projects/OASIS2.png";
+import OASIS3 from "../../Assets/Projects/OASIS3.png";
+import OASIS from "../../Assets/Projects/OASIS.png";
+import infinity2 from "../../Assets/Projects/infinity2.png";
+import infinity from "../../Assets/Projects/infinity.png";
+import infinity4 from "../../Assets/Projects/infinity4.png";
+import jeffry4 from "../../Assets/Projects/jeffry4.png";
+import jeffry1 from "../../Assets/Projects/jeffry1.png";
+import jeffry2 from "../../Assets/Projects/jeffry2.png";
+import Aravallilawn1 from "../../Assets/Projects/Aravallilawn1.png";
+import Aravallilawn from "../../Assets/Projects/Aravallilawn.png";
+import Aravallilawn3 from "../../Assets/Projects/Aravallilawn3.png";
+import yercaud3 from "../../Assets/Projects/yercaud3.png";
+import yercaud4 from "../../Assets/Projects/yercaud4.png";
+import yercaud2 from "../../Assets/Projects/yercaud2.png";
+
+
+
+
+
 
 function Projects() {
   return (
@@ -18,26 +38,26 @@ function Projects() {
           My Recent <strong className="purple">Works </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are a few projects I've worked on recently. 
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={VGP4}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              title="VGP Pointcloud"
+              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
               ghLink="https://github.com/soumyajit4419/Chatify"
               demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={4} className="project-card" >
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={VGP6}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+              title="VGP Model"
+              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
               ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
               demoLink="https://blogs.soumya-jit.tech/"
             />
@@ -45,10 +65,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={VGP2}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
+              title="VGP Model"
+              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
               ghLink="https://github.com/soumyajit4419/Editor.io"
               demoLink="https://editor.soumya-jit.tech/"              
             />
@@ -56,10 +76,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={rajesh2}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
+              title="Building Pointcloud "
+              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
               ghLink="https://github.com/soumyajit4419/Plant_AI"
               demoLink="https://plant49-ai.herokuapp.com/"
             />
@@ -67,26 +87,208 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={rajesh4}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
+              title="Building Model"
+              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
               ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={rajesh5}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
+              title="Building Model"
+              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
+
               ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              demoLink="https://blogs.soumya-jit.tech/"       
             />
           </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={OASIS2}
+              isBlog={false}
+              title="OASIS-Restaurant Pointcloud"
+              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
+
+              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              demoLink="https://blogs.soumya-jit.tech/"       
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={OASIS3}
+              isBlog={false}
+              title="OASIS-Restaurant Pointcloud"
+              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
+
+              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              demoLink="https://blogs.soumya-jit.tech/"       
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={OASIS}
+              isBlog={false}
+              title="OASIS-Restaurant Model"    
+              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
+
+
+              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              demoLink="https://blogs.soumya-jit.tech/"      
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={infinity2}
+              isBlog={false}
+              title="Inifity Pool Pointcloud"
+              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
+
+              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              demoLink="https://blogs.soumya-jit.tech/"      
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={infinity}
+              isBlog={false}
+              title="Inifity Pool Floorplan"
+              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
+
+              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              demoLink="https://blogs.soumya-jit.tech/"      
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={infinity4}
+              isBlog={false}
+              title="Inifity Pool Model"
+              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
+
+              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              demoLink="https://blogs.soumya-jit.tech/"      
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={jeffry4}
+              isBlog={false}
+              title="Building Pointcloud"
+              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
+
+              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              demoLink="https://blogs.soumya-jit.tech/"      
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={jeffry1}
+              isBlog={false}
+              title="Building Model"
+              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
+
+              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              demoLink="https://blogs.soumya-jit.tech/"       
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={jeffry2}
+              isBlog={false}
+              title="Building Model"
+              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
+
+              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              demoLink="https://blogs.soumya-jit.tech/"      
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Aravallilawn1}
+              isBlog={false}
+              title="Ararvalli Lawn Pointcloud"
+              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
+
+              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              demoLink="https://blogs.soumya-jit.tech/"      
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Aravallilawn}
+              isBlog={false}
+              title="Ararvalli Lawn Floorplan"
+              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
+
+              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              demoLink="https://blogs.soumya-jit.tech/"      
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Aravallilawn3}
+              isBlog={false}
+              title="Ararvalli Lawn Model"
+              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
+
+              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              demoLink="https://blogs.soumya-jit.tech/"     
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={yercaud3}
+              isBlog={false}
+              title="Yercaud Villa Pointcloud"
+              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
+
+              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              demoLink="https://blogs.soumya-jit.tech/"      
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={yercaud4}
+              isBlog={false}
+              title="Yercaud Villa Pointcloud"
+              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
+
+              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              demoLink="https://blogs.soumya-jit.tech/"      
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={yercaud2}
+              isBlog={false}
+              title="Yercaud Villa Model"
+              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
+
+              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              demoLink="https://blogs.soumya-jit.tech/"       
+            />
+          </Col>
+
         </Row>
       </Container>
     </Container>
