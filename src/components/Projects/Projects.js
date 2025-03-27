@@ -54,7 +54,7 @@ const ProjectGroup = ({ title, description, images }) => {
 function Projects() {
   const projectGroups = [
     {
-      title: "VGP",
+      title: "Theme Park",
       description: "It is a theme park project located in Chennai , India. The total area of the project is 20,150 sqft. The project was completed in 4 days using Revit Architecture to create 3D models and floor plans for the theme park.",
       images: [VGP4, VGP1, VGP2]
     },
@@ -64,12 +64,12 @@ function Projects() {
       images: [rajesh2, rajesh4, rajesh5]
     },
     {
-      title: "OASIS",
+      title: "Restaurant",
       description: "It is a restaurant project located in Udaipur , India. The total area of the project is 7,700 sqft. The project was completed in 4 days using an environment Revit plugin to create the landscape design. Pathways, stairs, and other elements were modeled in Revit and exported to SketchUp, where the plantation work was finalized.",
       images: [OASIS2, OASIS3, OASIS]
     },
     {
-      title: "Infinity Pool",
+      title: "Infinity Pool + Lawn",
       description: "It is a lawn and pool project located in Udaipur , India. The total area of the project is 26,300 sqft. The project was completed in 4 days using an environment Revit plugin to create the landscape design. Pathways, stairs, and other elements were designed in Revit and exported to SketchUp, where the plantation work was finalized.",
       images: [infinity2, infinity, infinity4]
     },
