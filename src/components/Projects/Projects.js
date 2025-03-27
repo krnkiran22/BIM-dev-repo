@@ -55,37 +55,37 @@ function Projects() {
   const projectGroups = [
     {
       title: "VGP Project",
-      description: "Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation.",
+      description: "It is a theme park project located in Chennai , India. The total area of the project is 20,150 sqft. The project was completed in 4 days using Revit Architecture to create 3D models and floor plans for the theme park.",
       images: [VGP4, VGP1, VGP2]
     },
     {
       title: "Building Project",
-      description: "Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation.",
+      description: "It is a bungalow project located in Chennai , India. The total area of the project is 22,560 sqft. The project was completed in 10 days using Revit Architecture to create 3D models and floor plans for the building.",
       images: [rajesh2, rajesh4, rajesh5]
     },
     {
-      title: "OASIS Restaurant",
-      description: "Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation.",
+      title: "OASIS",
+      description: "It is a restaurant project located in Udaipur , India. The total area of the project is 7,700 sqft. The project was completed in 4 days using an environment Revit plugin to create the landscape design. Pathways, stairs, and other elements were modeled in Revit and exported to SketchUp, where the plantation work was finalized.",
       images: [OASIS2, OASIS3, OASIS]
     },
     {
       title: "Infinity Pool",
-      description: "Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation.",
+      description: "It is a lawn and pool project located in Udaipur , India. The total area of the project is 26,300 sqft. The project was completed in 4 days using an environment Revit plugin to create the landscape design. Pathways, stairs, and other elements were designed in Revit and exported to SketchUp, where the plantation work was finalized.",
       images: [infinity2, infinity, infinity4]
     },
     {
-      title: "Jeffry Building",
-      description: "Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation.",
+      title: "Jeffry",
+      description: "It is a residential project located in Chennai , India. The total area of the project is 7,235 sqft. The project was completed in 5 days using Revit Architecture to create 3D models and floor plans for the building.",
       images: [jeffry4, jeffry1, jeffry2]
     },
     {
       title: "Aravalli Lawn",
-      description: "Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation.",
+      description: "It is a lawn project located in Udaipur , India. The total area of the project is 32,100 sqft. The project was completed in 2 days using an environment Revit plugin to create the landscape design. Pathways, stairs, and other elements were done in Revit and exported to SketchUp, where the plantation work for the project was completed.",
       images: [Aravallilawn1, Aravallilawn, Aravallilawn3]
     },
     {
       title: "Yercaud Villa",
-      description: "Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation.",
+      description: "It is a villa project located in Yercaud , India. The total area of the project is 3,590 sqft. The project was completed in 5 days using Revit Architecture to create 3D models and floor plans for the building.",
       images: [yercaud3, yercaud4, yercaud2]
     }
   ];
