@@ -59,7 +59,7 @@ function Projects() {
       images: [VGP4, VGP1, VGP2]
     },
     {
-      title: "Building",
+      title: "Bunglow",
       description: "It is a bungalow project located in Chennai , India. The total area of the project is 22,560 sqft. The project was completed in 10 days using Revit Architecture to create 3D models and floor plans for the building.",
       images: [rajesh2, rajesh4, rajesh5]
     },
@@ -74,7 +74,7 @@ function Projects() {
       images: [infinity2, infinity, infinity4]
     },
     {
-      title: "Jeffry",
+      title: "Building",
       description: "It is a residential project located in Chennai , India. The total area of the project is 7,235 sqft. The project was completed in 5 days using Revit Architecture to create 3D models and floor plans for the building.",
       images: [jeffry4, jeffry1, jeffry2]
     },
