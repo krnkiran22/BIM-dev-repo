@@ -24,12 +24,72 @@ import yercaud3 from "../../Assets/Projects/yercaud3.png";
 import yercaud4 from "../../Assets/Projects/yercaud4.png";
 import yercaud2 from "../../Assets/Projects/yercaud2.png";
 
-
-
-
-
+const ProjectGroup = ({ title, description, images }) => {
+  return (
+    <div className="project-group" style={{ marginBottom: "50px" }}>
+      <h2 className="project-subheading" style={{ color: "white", marginBottom: "20px" }}>
+        <strong className="purple">{title}</strong>
+      </h2>
+      
+      <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        {images.map((img, index) => (
+          <Col md={4} className="project-card" key={index}>
+            <ProjectCard
+              imgPath={img}
+              isBlog={false}
+              title=""
+              description=""
+            />
+          </Col>
+        ))}
+      </Row>
+      
+      <p style={{ color: "white", textAlign: "center", marginTop: "15px" }}>
+        {description}
+      </p>
+    </div>
+  );
+};
 
 function Projects() {
+  const projectGroups = [
+    {
+      title: "VGP Project",
+      description: "Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation.",
+      images: [VGP4, VGP6, VGP2]
+    },
+    {
+      title: "Building Project",
+      description: "Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation.",
+      images: [rajesh2, rajesh4, rajesh5]
+    },
+    {
+      title: "OASIS Restaurant",
+      description: "Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation.",
+      images: [OASIS2, OASIS3, OASIS]
+    },
+    {
+      title: "Infinity Pool",
+      description: "Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation.",
+      images: [infinity2, infinity, infinity4]
+    },
+    {
+      title: "Jeffry Building",
+      description: "Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation.",
+      images: [jeffry4, jeffry1, jeffry2]
+    },
+    {
+      title: "Aravalli Lawn",
+      description: "Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation.",
+      images: [Aravallilawn1, Aravallilawn, Aravallilawn3]
+    },
+    {
+      title: "Yercaud Villa",
+      description: "Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation.",
+      images: [yercaud3, yercaud4, yercaud2]
+    }
+  ];
+
   return (
     <Container fluid className="project-section">
       <Particle />
@@ -37,259 +97,18 @@ function Projects() {
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
         </h1>
-        <p style={{ color: "white" }}>
+        <p style={{ color: "white", textAlign: "center", marginBottom: "50px" }}>
           Here are a few projects I've worked on recently. 
         </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={VGP4}
-              isBlog={false}
-              title="VGP Pointcloud"
-              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card" >
-            <ProjectCard
-              imgPath={VGP6}
-              isBlog={false}
-              title="VGP Model"
-              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={VGP2}
-              isBlog={false}
-              title="VGP Model"
-              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={rajesh2}
-              isBlog={false}
-              title="Building Pointcloud "
-              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={rajesh4}
-              isBlog={false}
-              title="Building Model"
-              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={rajesh5}
-              isBlog={false}
-              title="Building Model"
-              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
-
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              demoLink="https://blogs.soumya-jit.tech/"       
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={OASIS2}
-              isBlog={false}
-              title="OASIS-Restaurant Pointcloud"
-              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
-
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              demoLink="https://blogs.soumya-jit.tech/"       
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={OASIS3}
-              isBlog={false}
-              title="OASIS-Restaurant Pointcloud"
-              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
-
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              demoLink="https://blogs.soumya-jit.tech/"       
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={OASIS}
-              isBlog={false}
-              title="OASIS-Restaurant Model"    
-              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
-
-
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              demoLink="https://blogs.soumya-jit.tech/"      
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={infinity2}
-              isBlog={false}
-              title="Inifity Pool Pointcloud"
-              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
-
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              demoLink="https://blogs.soumya-jit.tech/"      
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={infinity}
-              isBlog={false}
-              title="Inifity Pool Floorplan"
-              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
-
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              demoLink="https://blogs.soumya-jit.tech/"      
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={infinity4}
-              isBlog={false}
-              title="Inifity Pool Model"
-              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
-
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              demoLink="https://blogs.soumya-jit.tech/"      
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={jeffry4}
-              isBlog={false}
-              title="Building Pointcloud"
-              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
-
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              demoLink="https://blogs.soumya-jit.tech/"      
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={jeffry1}
-              isBlog={false}
-              title="Building Model"
-              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
-
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              demoLink="https://blogs.soumya-jit.tech/"       
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={jeffry2}
-              isBlog={false}
-              title="Building Model"
-              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
-
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              demoLink="https://blogs.soumya-jit.tech/"      
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={Aravallilawn1}
-              isBlog={false}
-              title="Ararvalli Lawn Pointcloud"
-              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
-
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              demoLink="https://blogs.soumya-jit.tech/"      
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={Aravallilawn}
-              isBlog={false}
-              title="Ararvalli Lawn Floorplan"
-              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
-
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              demoLink="https://blogs.soumya-jit.tech/"      
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={Aravallilawn3}
-              isBlog={false}
-              title="Ararvalli Lawn Model"
-              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
-
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              demoLink="https://blogs.soumya-jit.tech/"     
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={yercaud3}
-              isBlog={false}
-              title="Yercaud Villa Pointcloud"
-              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
-
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              demoLink="https://blogs.soumya-jit.tech/"      
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={yercaud4}
-              isBlog={false}
-              title="Yercaud Villa Pointcloud"
-              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
-
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              demoLink="https://blogs.soumya-jit.tech/"      
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={yercaud2}
-              isBlog={false}
-              title="Yercaud Villa Model"
-              description="Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation."
-
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              demoLink="https://blogs.soumya-jit.tech/"       
-            />
-          </Col>
-
-        </Row>
+        
+        {projectGroups.map((group, index) => (
+          <ProjectGroup
+            key={index}
+            title={group.title}
+            description={group.description}
+            images={group.images}
+          />
+        ))}
       </Container>
     </Container>
   );
