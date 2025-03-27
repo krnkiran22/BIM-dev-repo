@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import VGP4 from "../../Assets/Projects/VGP4.png";
-import VGP6 from "../../Assets/Projects/VGP6.png";
+import VGP1 from "../../Assets/Projects/VGP6.png";
 import VGP2 from "../../Assets/Projects/VGP2.png";
 import rajesh2 from "../../Assets/Projects/rajesh2.png";
 import rajesh4 from "../../Assets/Projects/rajesh4.png";
@@ -56,7 +56,7 @@ function Projects() {
     {
       title: "VGP Project",
       description: "Processed point cloud data to generate accurate floor plans and 3D BIM models, ensuring precise as-built documentation.",
-      images: [VGP4, VGP6, VGP2]
+      images: [VGP4, VGP1, VGP2]
     },
     {
       title: "Building Project",
