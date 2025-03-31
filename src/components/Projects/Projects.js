@@ -90,9 +90,6 @@ function Projects() {
     }
   ];
 
-
-
-
   return (
     <Container fluid className="project-section">
       <Particle />
